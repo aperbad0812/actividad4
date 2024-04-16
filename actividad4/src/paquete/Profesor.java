@@ -1,5 +1,7 @@
 package paquete;
 
+import java.util.Random;
+
 public class Profesor {
 	
 	
@@ -7,13 +9,17 @@ public class Profesor {
 	
 	public void ponerNotas (Alumno paco) {
 		
-		paco.getLengua().setCalificacion(Math.random()*10);
-		paco.getMates().setCalificacion(Math.random()*10);
-		paco.getSociales().setCalificacion(Math.random()*10);
+		Random aleatorio = new Random();
+		
+		paco.getLengua().setCalificacion(aleatorio.nextDouble(0,10));
+		paco.getMates().setCalificacion(aleatorio.nextDouble(0,10));
+		paco.getSociales().setCalificacion(aleatorio.nextDouble(0,10));
 		
 	
 		
 	}
+	
+	
 	
 	/**
 	 * Devuelve la nota media de un alumno
