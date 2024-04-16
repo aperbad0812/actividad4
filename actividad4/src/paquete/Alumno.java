@@ -1,7 +1,19 @@
 package paquete;
 
+
+/**
+ * <h1> Clase Alumno</h1>
+ * @version 0.01
+ * @author aperbad@code.org
+ * @since 04/2024
+ */
+
 public class Alumno {
 	
+
+	/**
+	 * Atributos
+	 */
 	
 	private Asignatura lengua;
 	private Asignatura mates;
@@ -12,7 +24,10 @@ public class Alumno {
 	
 	
 	
-	
+	/**
+	 * Constructores
+	 * <b>Descripcion</b> : Crean varios objetos alumnos
+	 */
 	
 	public Alumno (Asignatura lengua, Asignatura mates, Asignatura sociales) {
 		
@@ -23,8 +38,6 @@ public class Alumno {
 	}
 
 	public Alumno (int lengua, int  mates, int sociales) {
-		
-		
 		
 		this.lengua = new Asignatura(lengua);
 		this.mates = new Asignatura(mates);
@@ -82,6 +95,14 @@ public class Alumno {
 	}
 	
 	
+	/**
+	 * <b>Descripcion</b> : toStringAlumno
+	 * <b>Parámetros</b>
+	 * <ul>
+	 * <li>@param :Recoge una cadena de caracteres.
+	 * </ul>
+	 * <b>Estado</b> : Funcional
+	 */
 	
 	public String toStringAlumno() {
 		return "Nombre: "+ nombre +" Edad: "+ edad +" DNI: "+ dni +"Clasificacion de las tres asignaturas: "+lengua.getCalificacion()+", "+sociales.getCalificacion()+", "+mates.getCalificacion()+".";

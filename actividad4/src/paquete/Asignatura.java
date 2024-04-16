@@ -2,7 +2,6 @@ package paquete;
 
 /**
  * <h1> Clase Asignatura</h1>
- * Representa un empleado base del departamento de desarollo
  * @version 0.01
  * @author aperbad@code.org
  * @since 04/2024
