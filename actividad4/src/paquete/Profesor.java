@@ -32,6 +32,7 @@ public class Profesor {
 		double mates    = paco.getMates().getCalificacion();
 		double sociales = paco.getSociales().getCalificacion();
 	
+		
 		return (lengua + mates + sociales) / 3;
 
 	}

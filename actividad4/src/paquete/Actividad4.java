@@ -17,7 +17,7 @@ public class Actividad4 {
 		
 		javi.ponerNotas(paco);
 		
-		System.out.println( "La Nota media:" + javi.calcularMedia(paco));
+		System.out.println(String.format("La Nota media: %.2f", javi.calcularMedia(paco)));
 		System.out.println( "La Nota de lengua:" + paco.getLengua().getCalificacion());
 	}
 
